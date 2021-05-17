@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/add_new_task"
+        android:icon="@drawable/ic_add_icon"
+        android:title="Add Task"
+        app:showAsAction="always" />
+    <item
+        android:title="Delete"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/delete_all_task"
+                android:title="Delete All Tasks" />
+            <item
+                android:id="@+id/delete_done_task"
+                android:title="Delete Done Task" />
+            <item
+                android:id="@+id/delete_undone_task"
+                android:title="Delete Undone Task" />
+        </menu>
+    </item>
+    
+
+</menu>
